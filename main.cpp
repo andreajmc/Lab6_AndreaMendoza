@@ -238,23 +238,23 @@ int main() {
                 delete temp;
             } else if (choice5 == 3) {
                 int x;
-                cout << "Ingrese la coordenada x de la caja que desea mover: ";
+                cout << "Ingrese la coordenada x de la caja que desea información: ";
                 cin >> x;
                 int y;
-                cout << "Ingrese la coordenada y de la caja que desea mover: ";
+                cout << "Ingrese la coordenada y de la caja que desea  información: ";
                 cin >> y;
                 if (x < 0 || x >= 10 || y < 0 || y >= 10) {
                     cout << "Ha ingresado una coordenada inválida." << endl
-                         << "Ingrese la coordenada x de la caja que desea mover: ";
+                         << "Ingrese la coordenada x de la caja que desea  información: ";
                     cin >> x;
-                    cout << "Ingrese la coordenada y de la caja que desea mover: ";
+                    cout << "Ingrese la coordenada y de la caja que desea  información: ";
                     cin >> y;
                 }
                 if (storage[x][y] == NULL) {
                     cout << "No hay una caja disponible en esa posición." << endl
-                         << "Ingrese la coordenada x de la caja que desea mover: ";
+                         << "Ingrese la coordenada x de la caja que desea  información: ";
                     cin >> x;
-                    cout << "Ingrese la coordenada y de la caja que desea mover: ";
+                    cout << "Ingrese la coordenada y de la caja que desea  información: ";
                     cin >> y;
                 }
                 cout << endl << "Peso de la caja: " << storage[x][y]->setWeightT();
